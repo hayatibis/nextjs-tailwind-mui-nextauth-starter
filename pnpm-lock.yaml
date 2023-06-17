@@ -5,6 +5,9 @@ settings:
     excludeLinksFromLockfile: false
 
 dependencies:
+    '@mui/base':
+        specifier: 5.0.0-beta.4
+        version: 5.0.0-beta.4(@types/react@18.2.12)(react-dom@18.2.0)(react@18.2.0)
     '@types/node':
         specifier: 20.3.1
         version: 20.3.1
@@ -73,6 +76,22 @@ packages:
         engines: { node: '>=6.9.0' }
         dependencies:
             regenerator-runtime: 0.13.11
+        dev: false
+
+    /@emotion/is-prop-valid@1.2.1:
+        resolution:
+            {
+                integrity: sha512-61Mf7Ufx4aDxx1xlDeOm8aFFigGHE4z+0sKCa+IHCeZKiyP9RLD0Mmx7m8b9/Cf37f7NAvQOOJAbQQGVr5uERw==,
+            }
+        dependencies:
+            '@emotion/memoize': 0.8.1
+        dev: false
+
+    /@emotion/memoize@0.8.1:
+        resolution:
+            {
+                integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==,
+            }
         dev: false
 
     /@eslint-community/eslint-utils@4.4.0(eslint@8.43.0):
@@ -196,6 +215,64 @@ packages:
         dependencies:
             '@jridgewell/resolve-uri': 3.1.0
             '@jridgewell/sourcemap-codec': 1.4.14
+        dev: false
+
+    /@mui/base@5.0.0-beta.4(@types/react@18.2.12)(react-dom@18.2.0)(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-ejhtqYJpjDgHGEljjMBQWZ22yEK0OzIXNa7toJmmXsP4TT3W7xVy8bTJ0TniPDf+JNjrsgfgiFTDGdlEhV1E+g==,
+            }
+        engines: { node: '>=12.0.0' }
+        peerDependencies:
+            '@types/react': ^17.0.0 || ^18.0.0
+            react: ^17.0.0 || ^18.0.0
+            react-dom: ^17.0.0 || ^18.0.0
+        peerDependenciesMeta:
+            '@types/react':
+                optional: true
+        dependencies:
+            '@babel/runtime': 7.22.5
+            '@emotion/is-prop-valid': 1.2.1
+            '@mui/types': 7.2.4(@types/react@18.2.12)
+            '@mui/utils': 5.13.1(react@18.2.0)
+            '@popperjs/core': 2.11.8
+            '@types/react': 18.2.12
+            clsx: 1.2.1
+            prop-types: 15.8.1
+            react: 18.2.0
+            react-dom: 18.2.0(react@18.2.0)
+            react-is: 18.2.0
+        dev: false
+
+    /@mui/types@7.2.4(@types/react@18.2.12):
+        resolution:
+            {
+                integrity: sha512-LBcwa8rN84bKF+f5sDyku42w1NTxaPgPyYKODsh01U1fVstTClbUoSA96oyRBnSNyEiAVjKm6Gwx9vjR+xyqHA==,
+            }
+        peerDependencies:
+            '@types/react': '*'
+        peerDependenciesMeta:
+            '@types/react':
+                optional: true
+        dependencies:
+            '@types/react': 18.2.12
+        dev: false
+
+    /@mui/utils@5.13.1(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-6lXdWwmlUbEU2jUI8blw38Kt+3ly7xkmV9ljzY4Q20WhsJMWiNry9CX8M+TaP/HbtuyR8XKsdMgQW7h7MM3n3A==,
+            }
+        engines: { node: '>=12.0.0' }
+        peerDependencies:
+            react: ^17.0.0 || ^18.0.0
+        dependencies:
+            '@babel/runtime': 7.22.5
+            '@types/prop-types': 15.7.5
+            '@types/react-is': 18.2.0
+            prop-types: 15.8.1
+            react: 18.2.0
+            react-is: 18.2.0
         dev: false
 
     /@next/env@13.4.6:
@@ -364,6 +441,13 @@ packages:
             tslib: 2.5.3
         dev: false
 
+    /@popperjs/core@2.11.8:
+        resolution:
+            {
+                integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==,
+            }
+        dev: false
+
     /@rushstack/eslint-patch@1.3.2:
         resolution:
             {
@@ -405,6 +489,15 @@ packages:
         resolution:
             {
                 integrity: sha512-sRQsOS/sCLnpQhR4DSKGTtWFE3FZjpQa86KPVbhUqdYMRZ9FEFcfAytKhR/vUG2rH1oFbOOej6cuD7MFSobDRQ==,
+            }
+        dependencies:
+            '@types/react': 18.2.12
+        dev: false
+
+    /@types/react-is@18.2.0:
+        resolution:
+            {
+                integrity: sha512-1vz2yObaQkLL7YFe/pme2cpvDsCwI1WXIfL+5eLz0MI9gFG24Re16RzUsI8t9XZn9ZWvgLNDrJBmrqXJO7GNQQ==,
             }
         dependencies:
             '@types/react': 18.2.12
@@ -954,6 +1047,14 @@ packages:
             {
                 integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==,
             }
+        dev: false
+
+    /clsx@1.2.1:
+        resolution:
+            {
+                integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==,
+            }
+        engines: { node: '>=6' }
         dev: false
 
     /color-convert@2.0.1:
@@ -3162,6 +3263,13 @@ packages:
         resolution:
             {
                 integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==,
+            }
+        dev: false
+
+    /react-is@18.2.0:
+        resolution:
+            {
+                integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==,
             }
         dev: false
 
