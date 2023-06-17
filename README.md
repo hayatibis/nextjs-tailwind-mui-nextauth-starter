@@ -6,8 +6,8 @@ This is a boilerplate README file for a Next.js application using TypeScript as 
 
 Make sure you have the following dependencies installed on your system:
 
--   [Node.js](https://nodejs.org) (v18.15.0 or higher)
--   [pnpm](https://pnpm.io/) (v6 or higher, recommended for this project)
+- [Node.js](https://nodejs.org) (v18.15.0 or higher)
+- [pnpm](https://pnpm.io/) (v6 or higher, recommended for this project)
 
 ## Getting Started
 
@@ -55,12 +55,12 @@ This command will create an optimized production build of your Next.js applicati
 
 The project includes the following additional libraries:
 
--   [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
--   [Material-UI](https://material-ui.com/): A popular React UI framework with a wide range of components and themes.
--   [Husky](https://typicode.github.io/husky/#/): A Git hook manager for running scripts before committing or pushing code.
--   [lint-staged](https://github.com/okonet/lint-staged): A tool for running linters on staged files, used in combination with Husky.
--   [Prettier](https://prettier.io/): A code formatter that ensures consistent code style throughout the project.
--   [NextAuth.js](https://next-auth.js.org/): An authentication library for Next.js applications, providing a simple and flexible authentication solution.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
+- [Material-UI](https://material-ui.com/): A popular React UI framework with a wide range of components and themes.
+- [Husky](https://typicode.github.io/husky/#/): A Git hook manager for running scripts before committing or pushing code.
+- [lint-staged](https://github.com/okonet/lint-staged): A tool for running linters on staged files, used in combination with Husky.
+- [Prettier](https://prettier.io/): A code formatter that ensures consistent code style throughout the project.
+- [NextAuth.js](https://next-auth.js.org/): An authentication library for Next.js applications, providing a simple and flexible authentication solution.
 
 ## Code Quality and Formatting
 
@@ -82,8 +82,8 @@ The project also includes a pre-commit hook that runs linting and formatting che
 
 You can customize the configuration for ESLint, Prettier, and other tools by modifying the respective configuration files:
 
--   `.eslintrc.js`: ESLint configuration file.
--   `.prettierrc.js`: Prettier configuration file.
+- `.eslintrc.js`: ESLint configuration file.
+- `.prettierrc.js`: Prettier configuration file.
 
 ## Contributing
 
@@ -97,14 +97,14 @@ This project is licensed under the [MIT License](LICENSE).
 
 This project is based on best practices and popular libraries in the Next.js ecosystem. Special thanks to the authors and contributors of the following projects:
 
--   [Next.js](https://nextjs.org/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Tailwind CSS](https://tailwindcss.com/)
--   [Material-UI](https://material-ui.com/)
--   [Husky](https://typicode.github.io/husky/#/)
--   [lint-staged](https://github.com/okonet/lint-staged)
--   [Prettier](https://prettier.io/)
--   [NextAuth.js](https://next-auth.js.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Material-UI](https://material-ui.com/)
+- [Husky](https://typicode.github.io/husky/#/)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [Prettier](https://prettier.io/)
+- [NextAuth.js](https://next-auth.js.org/)
 
 ## Contact
 
