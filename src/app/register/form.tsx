@@ -44,15 +44,7 @@ export const RegisterForm = () => {
   }
 
   return (
-    <form
-      onSubmit={onSubmit}
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: 500,
-        rowGap: 10,
-      }}
-    >
+    <form onSubmit={onSubmit} className="flex flex-col w-[500px] gap-3">
       <label htmlFor="name">Name</label>
       <input
         required
@@ -60,7 +52,7 @@ export const RegisterForm = () => {
         name="name"
         value={formValues.name}
         onChange={handleChange}
-        style={{ padding: '1rem' }}
+        className="p-4"
       />
       <label htmlFor="email">Email</label>
       <input
@@ -69,7 +61,7 @@ export const RegisterForm = () => {
         name="email"
         value={formValues.email}
         onChange={handleChange}
-        style={{ padding: '1rem' }}
+        className="p-4"
       />
       <label htmlFor="password">Password</label>
       <input
@@ -78,15 +70,12 @@ export const RegisterForm = () => {
         name="password"
         value={formValues.password}
         onChange={handleChange}
-        style={{ padding: '1rem' }}
+        className="p-4"
       />
       <button
-        style={{
-          backgroundColor: `${loading ? '#ccc' : '#3446eb'}`,
-          color: '#fff',
-          padding: '1rem',
-          cursor: 'pointer',
-        }}
+        className={`cursor-pointer p-4 text-white ${
+          loading ? '#ccc' : '#3446eb'
+        }`}
         disabled={loading}
       >
         {loading ? 'loading...' : 'Register'}

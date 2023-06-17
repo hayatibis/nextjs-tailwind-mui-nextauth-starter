@@ -4,6 +4,15 @@ const nextConfig = {
     appDir: true,
     serverComponentsExternalPackages: ['@prisma/client', 'bcryptjs'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'robohash.org',
+        port: '',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

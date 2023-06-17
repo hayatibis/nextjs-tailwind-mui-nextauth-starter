@@ -2,14 +2,7 @@ import { RegisterForm } from './form'
 
 export default function RegisterPage() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        height: '70vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <div className="flex h-[70vh] justify-center items-center">
       <div>
         <h1>Register</h1>
         <RegisterForm />
