@@ -10,8 +10,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@mui/base": "5.0.0-beta.4",
-    "@prisma/client": "^4.15.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.5",
+    "@prisma/client": "4.16.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
@@ -33,7 +35,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "prisma": "^4.15.0",
+    "prisma": "4.16.0",
     "ts-node": "^10.9.1"
   },
   "lint-staged": {
