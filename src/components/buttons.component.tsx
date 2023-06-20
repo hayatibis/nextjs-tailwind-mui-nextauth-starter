@@ -2,12 +2,16 @@
 
 import { signIn, signOut } from 'next-auth/react'
 import Link from 'next/link'
+import Button from '@mui/base/Button'
 
 export const LoginButton = () => {
   return (
-    <button className="mr-2.5" onClick={() => signIn()}>
+    <Button
+      className="mr-2.5 bg-green-600 rounded-md py-1 px-4"
+      onClick={() => signIn()}
+    >
       Sign in
-    </button>
+    </Button>
   )
 }
 
